@@ -1,0 +1,69 @@
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger {
+    width: 30px;
+    height: 0.17em;
+    background-color: red;
+    margin: 4px 0;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.change .burger1 {
+    transform: rotate(0deg) translate(0px, 7px);
+}
+
+.change .burger2 {
+    opacity: 0;
+}
+
+.change .burger3 {
+    transform: rotate(0deg) translate(-0px, -6px);
+}
+
+.menu-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2em;
+    opacity: 1;
+    transition: opacity 0.4s;
+    text-transform: uppercase;
+    gap: 10em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00006c;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+    width: 10em;
+    text-align: left;
+}
+
+.container:hover .submenu {
+    display: block;
+}
+
+.submenu-item {
+    padding: 5px 0;
+}
+
+a {
+    color: white;
+}
+
+.container:hover a title {
+    color: red;
+}

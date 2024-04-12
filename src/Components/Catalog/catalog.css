@@ -1,0 +1,167 @@
+/* Стили для контейнера каталога */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%; /* Отрегулируйте ширину по своему усмотрению */
+    justify-content: space-between;
+    align-items: center; /* Вертикальное центрирование */
+    margin-top: 10em;
+}
+
+/* Стили для карточки категории */
+.category-card {
+    flex-direction: column; /* Вертикальное расположение */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #094b86;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавьте тень для эффекта карты */
+}
+
+/* Стили для заголовка категории */
+.category-card h2 {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f5f5f5;
+    margin-left: 1em;
+}
+
+/* Стили для сетки товаров */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Добавлен зазор */
+
+}
+
+/* Стили для карточки товара */
+.product-card {
+    flex-basis: 13%; /* Определите желаемую ширину */
+    flex-grow: 1; /* Равномерное распределение пространства */
+    flex-shrink: 1; /* Возможность уменьшения при необходимости */
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid rgb(255, 76, 35);
+    border-radius: 5px;
+    margin-right: 1em;
+    margin-left: 1em;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавьте тень для эффекта карты */
+}
+
+.product-card img {
+    width: 100%;
+    height: 15em;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.product-card h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(44, 58, 169);
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #092b4d;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    border-top: 2px solid rgb(255, 76, 35);
+}
+
+.product-card img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.product-card {
+    animation: fadeIn 1s ease-in-out;
+    transition: background-color 0.9s ease;
+    cursor: default;
+}
+
+.product-card:hover {
+    background-color: #ffffff;
+}
+
+@media (min-width: 2600px) {
+    .catalog {
+        max-width: 2080px;
+    }
+}
+
+@media (max-width: 1330px) {
+.catalog {
+    margin-left: 10em;
+    margin-top: 20em;
+}
+}
+
+@media (max-width: 619px) {
+    .catalog {
+        margin-left: 13em;
+        margin-top: 30em;
+        width: 80%;
+        margin-bottom: -17em;
+    }
+}
+
+@media (max-width: 515px) {
+    .catalog {
+        margin-left: 9em;
+        margin-top: 35em;
+        width: 30em;
+        margin-bottom: -25em;
+    }
+}
+
+@media (max-width: 475px) {
+    .catalog {
+        margin-left: 9em;
+        margin-top: 25em;
+        width: 27em;
+    }
+}
+
+@media (max-width: 425px) {
+    .catalog {
+        margin-left: 7em;
+        margin-top: 35em;
+        width: 27em;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    .catalog {
+        margin-left: 6em;
+        margin-bottom: -30em;
+    }
+}
+
+@media (max-width: 1768px) {
+    .category-card {
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+}
